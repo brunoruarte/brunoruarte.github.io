@@ -51,12 +51,12 @@ body {
 
 .navbar a{
     font-style: normal;
+    text-decoration: none; 
     color: #C2688A;      
     border: none;
     border-radius: 25px;
     padding: 10px 15px;
-    font-weight: bolder;
-    text-decoration: none;  
+    font-weight: bolder;     
     transition: transform 0.4s ease-in-out; 
 }
 
