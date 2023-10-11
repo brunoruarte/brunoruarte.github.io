@@ -1,0 +1,57 @@
+<html lang="es">
+    <head>
+        <title>Formumlario de contacto</title>
+        <link rel="stylesheet" href="../Estilos/estilofachero.css">
+        <style>
+            html {
+                scroll-behavior: smooth;
+            } 
+        </style>
+    </head>
+    <body>
+
+        <div id="barramenu">
+            <a href="../AdoptaUnAmigo.html">
+                <img src="../Recursos/logo2.png">
+            </a>
+
+            <nav class="navbar">
+                <a href="../AdoptaUnAmigo.html#elegiramigo">Adoptar</a>
+                <a href="../AdoptaUnAmigo.html#nosotros">Sobre nosotros</a>
+                <a href="../AdoptaUnAmigo.html#requisitos">Requisitos</a>                    
+            </nav>
+            <a href="#"><button>Contacto</button></a> 
+        </div>
+
+        <div class>
+           
+            <form class="sombra">
+
+                <h2 class="textonegro">Formulario de contacto</h2>
+                <p class="textonegro">Rellene el siguiente formulario. Un representante de la organización se pondrá en contacto con usted</p>
+                
+                <label for="name1">Nombre:</label>
+                <input type="text" id="name1" placeholder="Nombre"> 
+                <label for="name2">Apellido:</label>
+                <input type="text" id="name2" placeholder="Apellido">
+                <label for="email">Dirección de mail:</label>
+                <input type="email" id="email" placeholder="nombreapellido@correo.com">
+                <label for="name2">Teléfono de contacto:</label>
+                <input type="text" id="name2" placeholder="1234-123456">
+                <label for="date">Fecha de nacimiento:</label>
+                <input type="date" id="date" placeholder="01/01/1991">
+                <label for="textarea">Comentarios:</label>
+                <textarea type="coments" id="coments" rows="10" placeholder="Escriba cualquier información adicional que desee compartir."></textarea>
+                
+                <div class="prueba limpiar">
+                    <label for="condiciones">Acepto los requisitos <a href="../AdoptaUnAmigo.html#requisitos" target="_blank"> aquí </a> expuestos:</label>
+                    <input type="checkbox" id="condiciones">
+                </div>
+    
+                <input class="botonoscuro" type="submit" value="Enviar solicitud">
+            </form>
+
+        </div>
+        
+    </body>
+</html>
