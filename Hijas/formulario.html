@@ -32,7 +32,7 @@
             <form class="sombra">
 
                 <h2 class="textonegro">Formulario de contacto</h2>
-                <p class="textonegro">Rellene el siguiente formulario. Un representante de la organización se pondrá en contacto con usted</p>
+                <p class="textonegro">Completá todos los campos del siguiente formulario, un representante de la organización se pondrá en contacto.</p>
                 
                 <label for="name1">Nombre:</label>
                 <input type="text" id="name1" placeholder="Nombre"> 
@@ -41,13 +41,21 @@
                 <label for="email">Dirección de mail:</label>
                 <input type="email" id="email" placeholder="nombreapellido@correo.com">
                 <label for="name2">Teléfono de contacto:</label>
-                <input type="text" id="name2" placeholder="1234-123456">
-                <label for="date">Fecha de nacimiento:</label>
+                <input type="text" id="tel" placeholder="1234-123456">
+                <label for="date">Fecha de nacimiento:</label>                
                 <input type="date" id="date" placeholder="01/01/1991">
+                <label for="select">Seleccione el motivo de su contacto:</label>
+                <select>
+                    <option disabled selected value=" ">Estoy interesado en...</option>
+                    <option>Adoptar un michi</option>
+                    <option>Adoptar un perri</option>
+                    <option>Adoptar a cualquiera</option>
+                    <option>Contactar por otro motivo</option>
+                </select>
                 <label for="textarea">Comentarios:</label>
                 <textarea type="coments" id="coments" rows="10" placeholder="Escriba cualquier información adicional que desee compartir."></textarea>
                 
-                <div class="prueba limpiar">
+                <div class="check limpiar">
                     <label for="condiciones">Acepto los requisitos <a href="../index.html#requisitos" target="_blank"> aquí </a> expuestos:</label>
                     <input type="checkbox" id="condiciones">
                 </div>

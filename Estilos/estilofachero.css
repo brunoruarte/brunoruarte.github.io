@@ -316,14 +316,13 @@ form input {
     transition: border 0.2s ease-in-out;
 }
 
-form textarea {
-    border: 0;
+form textarea, select {
     border: solid 2px #c7c7c7;
     background-color: #EFF2F5;
     transition: border 0.2s ease-in-out;
 }
 
-form textarea:focus {
+form textarea, select:focus {
     outline: 0;
     border: 0;
     border: solid 2px #C2688A;
@@ -337,7 +336,7 @@ input:focus {
     transition: border 0.2s ease-in-out;
 }
 
-.prueba {
+.check {
     margin: 0 auto;
     align-items: center;    
     margin-top: 20px;
@@ -365,8 +364,8 @@ input:focus {
 
 .botonoscuro:hover {
     background-color: #c4899f;
-    transform: scale(1.1);
-    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+    transform: scale(1.09);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
     transition: transform 0.2s ease;
 }
 
