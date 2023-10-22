@@ -28,7 +28,7 @@
             </a> 
         </div>
 
-        <div>
+        <div id="contenedor_formulario">
             <form name="formulario" id="formulario" class="sombra" method="get" onsubmit="return validar()">
 
                 <h2 class="textonegro">Formulario de contacto</h2>
@@ -60,7 +60,7 @@
 
                 <label for="select">Seleccione el motivo de su contacto:</label>
                 <select id="desplegable" name="desplegable">
-                    <option disabled selected value=" ">Estoy interesado en...</option>
+                    <option disabled selected value="">Estoy interesado en...</option>
                     <option>Adoptar un michi</option>
                     <option>Adoptar un perri</option>
                     <option>Adoptar a cualquiera</option>
@@ -75,14 +75,18 @@
                 <div class="check limpiar">
                     <label for="condiciones">Acepto los requisitos <a href="../index.html#requisitos" target="_blank"> aquí </a> expuestos:</label>
                     <input type="checkbox" id="condiciones" name="condiciones"></br>
-                    <span id="errorcheck" class="error_centrado">Debe aceptar los requisitos.</span>
+                    <span id="errorcheck" class="error">Debe aceptar los requisitos.</span>
                 </div>
     
                 <input class="botonoscuro" type="submit" value="Enviar solicitud">
             </form>
         </div>
 
-        <p id="confirmacion">¡Se envió el formulario correctamente!</p>
+        <div id="contenedor_confirmacion" class="mensaje_confirmacion">
+            <p>El formulario se envió correctamente</p>
+            <p>¡Muchas gracias!</p>
+        </div>
+        
 
         <script src="../validar.js"></script>        
     </body>

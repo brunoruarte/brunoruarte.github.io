@@ -39,7 +39,6 @@ function validar() {
     if (!formatomail.test(email_valor)) {
         document.querySelector('#errormail').style.display = 'inline';
         email.focus();
-
         no_validado = false;
     } else {
         document.querySelector('#errormail').style.display = 'none';
@@ -61,6 +60,14 @@ function validar() {
         document.querySelector('#errorfecha').style.display = 'none';
     }
 
+    if (select_valor === "") {
+        document.querySelector('#errorselect').style.display = 'inline';
+        select.focus();
+        no_validado = false;
+    } else {
+        document.querySelector('#errorselect').style.display = 'none';
+    }
+
     if (!check_valor) {
         document.querySelector('#errorcheck').style.display = 'inline';
         check.focus();
@@ -70,11 +77,12 @@ function validar() {
     }
 
     if (no_validado) {
-        return true;
+        document.getElementById("contenedor_formulario").style.display = "none";
+        document.getElementById("contenedor_confirmacion").style.display = "block";
+        return false;
     } else {
         return false;
     }    
-    // Resto de tu validación aquí
 }
 
 

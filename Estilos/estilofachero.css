@@ -304,7 +304,8 @@ form label {
     font-weight: bold;
     font-size: large;
     margin-bottom: 15px;
-    margin-top: 20px;    
+    margin-top: 20px;   
+    margin-bottom: 5px;
 }
 
 form input {
@@ -312,8 +313,12 @@ form input {
     background-color: rgba(233, 15, 15, 0);
     border: 0;
     border-bottom: solid 2px #c7c7c7;
-    margin-bottom: 5px;
+    margin-bottom: 5px;    
     transition: border 0.2s ease-in-out;
+}
+
+form select {
+    margin-bottom: 5px;
 }
 
 form textarea, select {
@@ -393,14 +398,25 @@ input:focus {
     border-radius: 10px;
     padding: 5px;
     margin-bottom: 15px;
+    margin-top: 5px;
 }
 
-.error_centrado {
+.mensaje_confirmacion {    
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    color: #C2688A;  
+    background-color:#eff2f5f6;
+    font-size: x-large;
+    font-weight: bolder;
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.4); 
+
+    width: 30%;
+    margin: 0 auto;  
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 70px;
+    border: 0;
+    border-radius: 25px; 
     display: none;
-    color: #C2688A;
-    background-color:#c4899f44;   
-    border-radius: 10px;
-    padding: 5px;
-    margin-bottom: 15px;
-    align-items: center;
 }
