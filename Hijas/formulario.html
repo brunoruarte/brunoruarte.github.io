@@ -28,42 +28,62 @@
             </a> 
         </div>
 
-        <div class>           
-            <form class="sombra">
+        <div>
+            <form name="formulario" id="formulario" class="sombra" method="get" onsubmit="return validar()">
 
                 <h2 class="textonegro">Formulario de contacto</h2>
-                <p class="textonegro">Completá todos los campos del siguiente formulario, un representante de la organización se pondrá en contacto.</p>
+                <p class="textonegro">Completá todos los campos, un representante de la organización se pondrá en contacto.</p>
                 
-                <label for="name1">Nombre:</label>
-                <input type="text" id="name1" placeholder="Nombre"> 
-                <label for="name2">Apellido:</label>
-                <input type="text" id="name2" placeholder="Apellido">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre"> 
+                <span id="errornombre" class="error">Debe colocar un nombre válido.</span>
+
+                <label for="apellido">Apellido:</label>                
+                <input type="text" id="apellido" name="apellido" placeholder="Apellido">
+                <span id="errorapellido" class="error">Debe colocar un apellido válido.</span>
+
+
                 <label for="email">Dirección de mail:</label>
-                <input type="email" id="email" placeholder="nombreapellido@correo.com">
-                <label for="name2">Teléfono de contacto:</label>
-                <input type="text" id="tel" placeholder="1234-123456">
-                <label for="date">Fecha de nacimiento:</label>                
-                <input type="date" id="date" placeholder="01/01/1991">
+                <input type="email" id="email" name="email" placeholder="nombreapellido@correo.com">
+                <span id="errormail" class="error">Debe colocar un mail con formato válido.</span>
+
+
+                <label for="tel">Teléfono o Whatsapp:</label>
+                <input type="text" id="tel" name="tel" placeholder="Ejemplo celular: 2657-112233">
+                <span id="errortel" class="error">Debe colocar un teléfono con formato válido.</span>
+
+
+                <label for="fecha">Fecha de nacimiento:</label>                
+                <input type="date" id="fecha" name="fecha" placeholder="01/01/1991">
+                <span id="errorfecha" class="error">Seleccione una fecha.</span>
+
+
                 <label for="select">Seleccione el motivo de su contacto:</label>
-                <select>
+                <select id="desplegable" name="desplegable">
                     <option disabled selected value=" ">Estoy interesado en...</option>
                     <option>Adoptar un michi</option>
                     <option>Adoptar un perri</option>
                     <option>Adoptar a cualquiera</option>
                     <option>Contactar por otro motivo</option>
                 </select>
+                <span id="errorselect" class="error">Debe seleccionar una opción del manú desplegable.</span>
+
+
                 <label for="textarea">Comentarios:</label>
                 <textarea type="coments" id="coments" rows="10" placeholder="Escriba cualquier información adicional que desee compartir."></textarea>
                 
                 <div class="check limpiar">
                     <label for="condiciones">Acepto los requisitos <a href="../index.html#requisitos" target="_blank"> aquí </a> expuestos:</label>
-                    <input type="checkbox" id="condiciones">
+                    <input type="checkbox" id="condiciones" name="condiciones"></br>
+                    <span id="errorcheck" class="error_centrado">Debe aceptar los requisitos.</span>
                 </div>
     
                 <input class="botonoscuro" type="submit" value="Enviar solicitud">
             </form>
         </div>
 
-        <script src="../js.js"></script>        
+        <p id="confirmacion">¡Se envió el formulario correctamente!</p>
+
+        <script src="../validar.js"></script>        
     </body>
 </html>
