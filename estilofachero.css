@@ -388,39 +388,40 @@ input:focus {
 
 .omaigad {
     display: flex;
-    margin: 0 auto ;
-    margin-top: 50px;
+    justify-content: center; /* Alineación horizontal al centro */
+    align-items: center;
+    text-align: center; /* Alineación del texto dentro de los elementos */
+    margin: 50px auto; /* Alineación horizontal y espacio superior */
     width: 100%;
     height: auto;
-    justify-content: center;
-    align-items: center;
 }
 
 .boton_carru {
-    font-size: 40px;
-    text-align: center;
-    position: absolute;
-    border: 5px;
-    border-radius: 50px;
+    border-radius: 50%;
+    padding: 2%;
+    margin: 2%;
+    transition: transform 0.2s ease-in-out;
+    border: solid 5px;
 }
 
 .boton_carru:hover {
     cursor: pointer;
-    transform: scale(1.5);
+    transform: scale(1.3);
     transition: transform 0.2s ease-in-out;
 }
 
 .atras {
-    display: flex;
-    left: 2%;
+    left: 3%;
     top: calc(50%);
 }
 
 .adelante {
-    right: 2%;
+    right: 3%;
     top: calc(50%);
 }
 
 .imagen_carru {
     width: 70%;
+    margin: 0;
+    padding: 0;
 }
