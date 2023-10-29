@@ -1,6 +1,6 @@
 const formatomail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,9}$/;
 const formatotel = /^\d{1,16}$/;
-const chamba = document.getElementById("msj");
+const msj_ok = document.getElementById("msj");
 
 function validar() {
     let nombre = document.getElementById("nombre");
@@ -19,12 +19,12 @@ function validar() {
     let check_valor = check.checked;
 
 
-    let no_validado = true;
+    let validado = true;
 
     if (nombre_valor === "") {
         document.querySelector('#errornombre').style.display = 'inline';
         nombre.focus();
-        no_validado = false;
+        validado = false;
     } else {
         document.querySelector('#errornombre').style.display = 'none';
     }
@@ -32,7 +32,7 @@ function validar() {
     if (apellido_valor === "") {
         document.querySelector('#errorapellido').style.display = 'inline';
         apellido.focus();
-        no_validado = false;
+        validado = false;
     } else {
         document.querySelector('#errorapellido').style.display = 'none';
     }
@@ -40,7 +40,7 @@ function validar() {
     if (!formatomail.test(email_valor)) {
         document.querySelector('#errormail').style.display = 'inline';
         email.focus();
-        no_validado = false;
+        validado = false;
     } else {
         document.querySelector('#errormail').style.display = 'none';
     }
@@ -48,7 +48,7 @@ function validar() {
     if (!formatotel.test(tel_valor)) {
         document.querySelector('#errortel').style.display = 'inline';
         tel.focus();
-        no_validado = false;
+        validado = false;
     } else {
         document.querySelector('#errortel').style.display = 'none';
     }
@@ -56,7 +56,7 @@ function validar() {
     if (fecha_valor === "") {
         document.querySelector('#errorfecha').style.display = 'inline';
         fecha.focus();
-        no_validado = false;
+        validado = false;
     } else {
         document.querySelector('#errorfecha').style.display = 'none';
     }
@@ -64,7 +64,7 @@ function validar() {
     if (select_valor === "") {
         document.querySelector('#errorselect').style.display = 'inline';
         select.focus();
-        no_validado = false;
+        validado = false;
     } else {
         document.querySelector('#errorselect').style.display = 'none';
     }
@@ -72,19 +72,19 @@ function validar() {
     if (!check_valor) {
         document.querySelector('#errorcheck').style.display = 'inline';
         check.focus();
-        no_validado = false;
+        validado = false;
     } else {
         document.querySelector('#errorcheck').style.display = 'none';
     }
 
-    if (no_validado) {
+    if (validado) {
         document.getElementById("contenedor_formulario").style.display = "none";
         document.getElementById("contenedor_confirmacion").style.display = "block";
 
         return false;
     } else {        
         let mensaje = `¡Muchas gracias ${nombre_valor}!`;
-        chamba.innerHTML = mensaje;
+        msj_ok.innerHTML = mensaje;
         return false;
     }    
 }

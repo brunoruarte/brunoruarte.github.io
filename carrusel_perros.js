@@ -2,7 +2,7 @@ let arreglo_img = ['../Recursos/img_carrusel//perros/1.jpg', '../Recursos/img_ca
 let contador = 0;
 
 function carrusel(contenedor) {
-    contenedor.addEventListener('click', elemento => {
+    contenedor.addEventListener('click',function(elemento) {
         let atras = contenedor.querySelector('.atras');
         let adelante = contenedor.querySelector('.adelante');
         let imagen = contenedor.querySelector('.imagen_carru');
@@ -30,7 +30,7 @@ function carrusel(contenedor) {
     });
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function() {
     let contenedor = document.querySelector('.omaigad');
     carrusel(contenedor);
 });
