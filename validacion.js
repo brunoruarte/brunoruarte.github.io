@@ -83,7 +83,7 @@ function validar() {
 
         return false;
     } else {        
-        let mensaje = `¡Muchas gracias ${nombre_valor}!`;
+        const mensaje = `¡Muchas gracias ${nombre_valor}!`;
         msj_ok.innerHTML = mensaje;
         return false;
     }    
