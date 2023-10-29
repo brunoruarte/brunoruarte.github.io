@@ -32,6 +32,5 @@ function carrusel(contenedor) {
 
 document.addEventListener("DOMContentLoaded", () => {
     let contenedor = document.querySelector('.omaigad');
-
     carrusel(contenedor);
 });

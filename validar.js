@@ -80,6 +80,7 @@ function validar() {
     if (no_validado) {
         document.getElementById("contenedor_formulario").style.display = "none";
         document.getElementById("contenedor_confirmacion").style.display = "block";
+
         return false;
     } else {        
         let mensaje = `¡Muchas gracias ${nombre_valor}!`;
