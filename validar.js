@@ -1,5 +1,6 @@
 const formatomail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,9}$/;
 const formatotel = /^\d{1,16}$/;
+const chamba = document.getElementById("msj");
 
 function validar() {
     let nombre = document.getElementById("nombre");
@@ -80,9 +81,9 @@ function validar() {
         document.getElementById("contenedor_formulario").style.display = "none";
         document.getElementById("contenedor_confirmacion").style.display = "block";
         return false;
-    } else {
+    } else {        
+        let mensaje = `¡Muchas gracias ${nombre_valor}!`;
+        chamba.innerHTML = mensaje;
         return false;
     }    
 }
-
-
