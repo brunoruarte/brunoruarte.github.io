@@ -1,4 +1,4 @@
-let arreglo_img = ['../Recursos/img_carrusel/1.png', '../Recursos/img_carrusel/2.png', '../Recursos/img_carrusel/3.png'];
+let arreglo_img = ['../Recursos/img_carrusel//perros/1.png', '../Recursos/img_carrusel/perros/2.png', '../Recursos/img_carrusel/perros/3.png'];
 let contador = 0;
 
 function carrusel(contenedor) {
