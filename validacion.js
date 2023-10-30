@@ -86,5 +86,6 @@ function validar() {
         let mensaje = `¡Muchas gracias ${nombre_valor}!`;
         msj_ok.innerHTML = mensaje;
         return false;
-    }    
+    }   
 }
+return false; 
